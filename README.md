@@ -2,11 +2,9 @@
 
 Factyle is a fake news detection research prototype for multimodal short-video news. It combines three evidence streams:
 
-- cross-modal consistency from ImageBind text, video, and audio embeddings;
-- entity-level retrieval features from web search and LLM-based extraction;
-- style-aware rewriting and analysis features.
-
-The repository is organized for paper review and reproduction. It excludes datasets, API credentials, checkpoints, cached features, logs, and local machine paths.
+- **Module 1 — Cross-modal consistency**: cross-validation across ImageBind text, video, and audio embeddings;
+- **Module 2 — Entity-level fact deviation**: entity retrieval and comparison features based on Baidu web search;
+- **Module 3 — Style deviation analysis**: LLM-based style rewriting and difference analysis.
 
 ## Repository Layout
 
@@ -148,4 +146,3 @@ This anonymous package intentionally omits:
 - local backup scripts;
 - hyperparameter search round scripts;
 - git history from the development workspace.
-
