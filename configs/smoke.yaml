@@ -1,0 +1,29 @@
+name: smoke_test
+output_dir: outputs/smoke_test
+
+model:
+  module_output_dim: 256
+  mlp2_hidden: 1024
+  text_aux_dim: 64
+  dropout: 0.1
+
+training:
+  learning_rate: 0.0005
+  weight_decay: 0.0001
+  batch_size: 8
+  epochs: 5
+  seed: 42
+  decision_threshold: 0.5
+  patience: 3
+
+data:
+  fake_sv_root: data/FakeSVDataset
+  fake_tt_root: data/FakeTTDataset
+  max_train_items: 8
+  max_test_items: 8
+
+cache:
+  cache_dir: outputs/smoke_test/feature_cache
+  hashing_dim: 512
+  num_video_frames: 12
+  api_workers: 7

@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+*.egg
+
+# Environment
+.env
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Project outputs & data
+outputs/
+checkpoints/
+/models
+/models/
+data/
+release/
+*.pt
+*.pth
+*.ckpt
+*.jsonl
+*.npy
+
+# OS
+.DS_Store
+Thumbs.db

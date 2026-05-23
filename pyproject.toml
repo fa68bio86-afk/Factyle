@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "factyle"
+version = "0.1.0"
+description = "Fake news detection system"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "opencv-python",
+  "PyYAML",
+  "requests",
+  "scikit-learn",
+  "spacy",
+  "torch",
+  "torchaudio",
+  "transformers",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
