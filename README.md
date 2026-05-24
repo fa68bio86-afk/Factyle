@@ -133,16 +133,3 @@ python scripts/train_from_cache.py \
 ```
 
 See `docs/REPRODUCE.md` for a reproducible command template.
-
-## What Is Not Included
-
-This anonymous package intentionally omits:
-
-- raw datasets;
-- cached JSONL features;
-- trained checkpoints;
-- prediction files and logs;
-- API keys;
-- local backup scripts;
-- hyperparameter search round scripts;
-- git history from the development workspace.
